@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col cols="12">
+    <v-row class="mt-1">
+      <v-col cols="12" class="d-flex justify-center">
         <h1>目前事項 : {{ currentText }}</h1>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" class="d-flex justify-center">
         <Digit v-for="(data, i) in currentTime" :key="i" :data="data" :color="numColor"></Digit>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" class="d-flex justify-center mt-3">
         <v-btn
           class="me-2"
           icon="mdi-play"
