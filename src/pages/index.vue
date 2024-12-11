@@ -106,8 +106,8 @@ const currentTime = computed(() => {
 })
 
 const numColor = computed(() => {
-  const colorArr = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
-  return colorArr[(timeLeft.value - 2) % 7]
+  const colorArr = ['yellow', 'green', 'blue', 'violet', 'red', 'orange']
+  return colorArr[timeLeft.value % 6]
 })
 </script>
 

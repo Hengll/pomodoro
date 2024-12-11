@@ -2,10 +2,14 @@
   <v-app>
     <v-app-bar>
       <v-container class="d-flex align-center">
+        <img class="me-2" height="40" src="@/assets/favicon.ico" />
         <v-app-bar-title>番茄鐘</v-app-bar-title>
         <v-btn prepend-icon="mdi-home" to="/">首頁</v-btn>
         <v-btn prepend-icon="mdi-format-list-bulleted" to="/list">事項</v-btn>
         <v-btn prepend-icon="mdi-cog" to="/setting">設定</v-btn>
+        <v-btn class="text-h5" prepend-icon="mdi-theme-light-dark" @click="toggleTheme"
+          ><span class="d-none d-sm-inline text-h6">深/淺主題</span></v-btn
+        >
       </v-container>
     </v-app-bar>
     <v-main>
@@ -31,4 +35,11 @@
   </v-app>
 </template>
 
-<style scoped lang="scss"></style>
+<script setup>
+import { useTheme } from 'vuetify'
+
+const theme = useTheme()
+const toggleTheme = () => {
+  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+}
+</script>
