@@ -117,7 +117,7 @@ defineProps({
 
 <style scoped lang="scss">
 .digit {
-  width: 10%;
+  width: 8%;
   height: 100%;
   margin: 10px;
 }
