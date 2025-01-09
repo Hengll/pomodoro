@@ -17,5 +17,5 @@ https://hengll.github.io/pomodoro/
 3.開始倒數
 ![3](/img/3.PNG)
 
-3.設定深淺主題
+4.設定深淺主題
 ![4](/img/4.PNG)
